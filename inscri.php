@@ -1,9 +1,22 @@
+
+<?php
+session_start();
+try
+{
+$bdd = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+}
+catch(Exception $e)
+{
+die('Erreur : '.$e->getMessage()); 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>connection</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -57,6 +70,7 @@
           Search
         </button>
       </form>
+      
     </div>
   </div>
 </nav><br><br>
@@ -64,61 +78,26 @@
 </section>
  
  
- <section class="conec">
  
- <h1>Formulaire d'enregistrement</h1>
+ <section class="inscri">
  
- <div class="conn">
-<form method="post" action="traitement.php"><br>
-  <!-- 2 column grid layout with text inputs for the first and last names -->
-  <div class="row mb-4">
-    <div class="col">
-      <div class="form-outline">
-        <input type="text" id="nom" name="nom" class="form-control" placeholder="entrez votre nom" required/>
-        <label class="form-label" for="form3Example1">Nom*</label>
-      </div>
-    </div>
-    <div class="col">
-      <div class="form-outline">
-        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="entrez votre prenom"/>
-        <label class="form-label" for="form3Example2">Prenom</label>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-      <div class="form-outline">
-        <input type="text" id="pseudo" name="pseudo" class="form-control" placeholder="entrez votre pseudo"/>
-        <label class="form-label" for="form3Example2">Nom d'utilisateur</label>
-      </div>
-    </div>
-<!-- number input -->
-
+ <form method="POST" action="traitement2.php">
+  <!-- Name input -->
   <div class="form-outline mb-4">
-    <input type="phone" id="numero" name="numero" class="form-control" placeholder="entrez votre numero"/>
-    <label class="form-label" for="form3Example3">Numero</label>
+    <input type="password" id="pass" name="pass" class="form-control" />
+    <label class="form-label" for="form5Example1">password</label>
   </div>
-
-
 
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="email" name="email" class="form-control" placeholder="entrez votre email"/>
-    <label class="form-label" for="form3Example3"> Addresse Email</label>
-  </div>
-
-  <!-- Password input -->
-  <div class="form-outline mb-4">
-    <input type="pass" id="mdp" name="pass" class="form-control" placeholder="entrez votre mot de passe"/>
-    <label class="form-label" for="form3Example4">Mot de passe</label>
+    <input type="email" id="email" name="email" class="form-control" />
+    <label class="form-label" for="form5Example2">Email address</label>
   </div>
 
   
+
   <!-- Submit button -->
   <button type="submit" name="submit" class="btn btn-primary btn-block mb-4">Se connecter</button>
-
-  <!-- Register buttons -->
- 
 </form>
-</div>
-</section>
+ 
+ </section>

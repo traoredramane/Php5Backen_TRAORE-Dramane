@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(route2.jpg);
+    background-position: center;
+    background-size: cover;
+    position:  relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 40%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+text-box h1 {
+    font-size: 62px;
+}
+
+text-box p {
+    margin: 10px 0 40px; 
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}  
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+/* footer 1 */
+
+.vau ul li a{
+    text-decoration: none;
+    }
+    
+    .vaut1 ul li a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .vaut ul li a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    
+    .vaut2 button{
+        margin-top: 10px;
+        padding: 5px 30px;
+        border-radius: 5px;
+        background-color: brown;
+        color: #fff;
+    }
+    
+    .ya{
+        font-size: 30px;
+    }
+    
+    
+    /* section 1 page1 */
+    
+    .vil h1{
+        color: brown;
+        font-size: 50px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-bottom: 30px;
+        
+    }
+    
+    .vil h3{
+        margin-left: 40px;
+        
+    }
+    
+    
+    .vil p{
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .vil h2{
+       
+        text-align: center;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .vile{
+        display: flex;
+       justify-content: space-between;
+       padding-left: 30px;
+       padding-right: 50px;
+   
+    }
+    .ma1{
+        width: 510px;
+       
+       
+    }
+    
+    .ma2{
+        width: 460px;
+    }
+    
+    .ma3{
+        width: 370px;
+    }
+    
+    .her0{
+        background-color: blue;
+        height: 15vh;
+        margin-top: 30px;
+        border-radius: 5px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    
+    .her0 a{
+       margin-left: 250px; 
+    }
+.hero-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 18px 64px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+   
+}  
+.hero-btn1:hover{
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+/* section2 page1 */
+
+.wag{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.wag h1{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #f44336;
+}
+
+
+
+.her1{
+    background-color: #f44336;
+    height: 15vh;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.her1 a{
+   margin-left: 250px; 
+}
+.base2{
+display: inline-block;
+text-decoration: none;
+color: black;
+border: 1px solid #fff;
+border-radius: 15px;
+padding: 18px 64px;
+font-size: 20px;
+background: transparent;
+position: relative;
+cursor: pointer;
+
+}  
+.base2:hover{
+border: 1px solid #fff;
+background: white;
+transition: 1s;
+}
+
+/* section 3 page 3 */
+
+.baf h1{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #f44336;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bafs {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ci{
+  width: 490px;  
+}
+
+
+.san{
+    width: 470px; 
+} 
+
+
+.me{
+    width: 420px;   
+}
+
+.her2{
+    background-color: burlywood;
+    height: 15vh;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.her2 a{
+   margin-left: 250px; 
+}
+.hero-btn2{
+display: inline-block;
+text-decoration: none;
+color: black;
+border: 1px solid #fff;
+border-radius: 15px;
+padding: 18px 64px;
+font-size: 20px;
+background: transparent;
+position: relative;
+cursor: pointer;
+
+}  
+.hero-btn2:hover{
+border: 1px solid #fff;
+background: blue;
+transition: 1s;
+}
+
+
+/* partie bobo et ces merveilles */
+
+
+
+.mosq{
+  
+  
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+ }
+ 
+ 
+ .mosq-col{
+     flex-basis: 32%;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ 
+ .layer {
+     background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+  }
+  .layer:hover{
+      background: rgba(96, 54, 54, 0.7);
+  }
+  .layer h3 {
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .layer:hover h3{
+     bottom: 49%; 
+     opacity: 1;
+  }
+ 
+ 
+ 
+ 
+ .mos{
+     display: flex;
+     justify-content: space-between;
+    
+ 
+ }
+ .mos h2{
+     padding-top: 20px;
+ }
+ 
+ .mo1 img{
+     width: 440px;
+ }
+ 
+ .mo2 img{
+     width: 470px;
+ }
+ 
+ 
+ .mo3 img{
+     width: 500px;
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page contact */
+
+
+.fors form{
+   padding-left: 100px; 
+   padding-right: 100px;
+   background-color: burlywood;
+}
+
+
+.fors button{
+    margin-left: 230px;
+}
+
+.for{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.fors h1{
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fir{
+    background-color: #f44336;
+    padding: 5% 5%;
+}
+
+.fir h1{
+    font-size: 80px;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.fir p{
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
+.fir h4{
+    color: #fff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* partie se connecter et s'enregistrer */
+
+.conec form{
+    padding-left: 500px;
+    padding-right: 500px;
+    background-color: rgba(96, 54, 54, 0.7); 
+}
+
+.conn{
+   
+    border-radius: 5px;
+   
+}
+
+.conec h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.conec button{
+    margin-left: 200px;
+}
+
+.bari{
+    height: 13vh;
+    background-color: brown;
+}
+
+.bari  a{
+    color: blue;
+}
+.xi{
+    ;
+}
+
+/* pages s'inscrire et se connecter a la page */
+
+.inscri form{
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+.inscri button{
+    margin-left: 100px;
+}
