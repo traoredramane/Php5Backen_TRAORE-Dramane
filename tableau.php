@@ -1,4 +1,4 @@
-
+ 
 <?php
 session_start();
 try
@@ -10,6 +10,9 @@ catch(Exception $e)
 die('Erreur : '.$e->getMessage()); 
 }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +31,7 @@ die('Erreur : '.$e->getMessage());
     
 </head>
 <body>
+
 
 <section class="">
 
@@ -74,30 +78,71 @@ die('Erreur : '.$e->getMessage());
     </div>
   </div>
 </nav><br><br>
- 
-</section>
- 
- 
- 
- <section class="inscri">
- 
- <form method="POST" action="traitement2.php">
-  <!-- Name input -->
-  <div class="form-outline mb-4">
-    <input type="password" id="pass" name="pass" class="form-control" />
-    <label class="form-label" for="form5Example1">password</label>
-  </div>
 
-  <!-- Email input -->
-  <div class="form-outline mb-4">
-    <input type="email" id="email" name="email" class="form-control" />
-    <label class="form-label" for="form5Example2">Email address</label>
-  </div>
+<section class="tra">
+<h1>Page Administrateur</h1>
 
+
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+ 
   
 
-  <!-- Submit button -->
-  <button type="submit" name="submit" class="btn btn-primary btn-block mb-4">Se connecter</button>
-</form>
- 
- </section>
+    <tr>
+      <th>Nom <br>Addresse Email</th>
+      <th>Prenom</th>
+      <th>Numero</th>
+      <th>nom d'utilisateur</th>
+      <th>Mot de pass</th>
+      <th>Statut</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+   
+  <?php  
+  
+  $req= $bdd->query("SELECT * FROM users");
+  while($user= $req->fetch()){
+    ?>
+    <tr>
+    
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+              alt=""
+              style="width: 45px; height: 45px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1"><?php echo $user['nom']?></p>
+            <p class="text-muted mb-0"><?php echo $user['email']?></p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1"><?php echo $user['prenom']?></</p>
+       
+      </td>
+      <td>
+      <p class="fw-normal mb-1"><?php echo $user['numero']?></</p>
+      </td>
+      <td><?php echo $user['pseudo']?></td>
+      <td>
+      <?php echo $user['pass']?>
+      </td>
+      <td><?php echo $user['statut']?></td>
+      <td> <button type="button" class="btn btn-link btn-sm btn-rounded">
+      <a href="modif.php?id=<?php echo $user['id'];?>"><button class="btn btn-primary">modifier</button></a>
+          <a href="sup.php?id"><button class="btn btn-outline-secondary">suprimer</button></a>
+        </button></td>
+    </tr>
+   
+    </tr>
+    <?php } ?> 
+  </tbody>
+</table>
+
+</section>

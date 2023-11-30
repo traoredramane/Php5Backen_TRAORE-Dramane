@@ -35,10 +35,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active xi" aria-current="page" href="#">Se connecter</a>
+          <a class="nav-link active xi" aria-current="page" href="inscri.php">Se connecter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">S'inscrir</a>
+          <a class="nav-link" href="connect.php">S'inscrir</a>
         </li>
        
       </ul>
@@ -80,7 +80,7 @@
     </div>
     <div class="col">
       <div class="form-outline">
-        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="entrez votre prenom"/>
+        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="entrez votre prenom" required/>
         <label class="form-label" for="form3Example2">Prenom</label>
       </div>
     </div>
@@ -88,14 +88,14 @@
   
   <div class="col">
       <div class="form-outline">
-        <input type="text" id="pseudo" name="pseudo" class="form-control" placeholder="entrez votre pseudo"/>
+        <input type="text" id="pseudo" name="pseudo" class="form-control" placeholder="entrez votre pseudo" required/>
         <label class="form-label" for="form3Example2">Nom d'utilisateur</label>
       </div>
     </div>
 <!-- number input -->
 
   <div class="form-outline mb-4">
-    <input type="phone" id="numero" name="numero" class="form-control" placeholder="entrez votre numero"/>
+    <input type="phone" id="numero" name="numero" class="form-control" placeholder="entrez votre numero" required/>
     <label class="form-label" for="form3Example3">Numero</label>
   </div>
 
@@ -103,13 +103,13 @@
 
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="email" name="email" class="form-control" placeholder="entrez votre email"/>
+    <input type="email" id="email" name="email" class="form-control" placeholder="entrez votre email" required/>
     <label class="form-label" for="form3Example3"> Addresse Email</label>
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="pass" id="mdp" name="pass" class="form-control" placeholder="entrez votre mot de passe"/>
+    <input type="pass" id="mdp" name="pass" class="form-control" placeholder="entrez votre mot de passe" required/>
     <label class="form-label" for="form3Example4">Mot de passe</label>
   </div>
 

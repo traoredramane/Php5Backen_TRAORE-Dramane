@@ -11,6 +11,9 @@
     background-size: cover;
     position:  relative;
 }
+
+
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -485,9 +488,6 @@ transition: 1s;
 .bari  a{
     color: blue;
 }
-.xi{
-    ;
-}
 
 /* pages s'inscrire et se connecter a la page */
 
@@ -498,4 +498,23 @@ transition: 1s;
 
 .inscri button{
     margin-left: 100px;
+}
+
+
+/* page administrateur */
+
+.tra{
+    color: #f44336;
+}
+
+
+/* pages modification */
+
+.dif form{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.dif button{
+    margin-left: 250px;
 }

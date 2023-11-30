@@ -26,10 +26,8 @@
     $reponse = $bdd->query("select * from ville where id=1");
     while($donnees = $reponse->fetch()){
       ?>
-   
-   
   <h1><?php echo $donnees["nom"]?></h1>
-    <!-- <h1>Trois grandes villes touristique du Burkina Faso</h1> -->
+   
     <?php
     }
     ?>
